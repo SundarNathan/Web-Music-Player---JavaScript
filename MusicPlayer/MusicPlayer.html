@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Music Player</p>
+    </header>
+    
+    <div class="controls">
+        <div class="seek">
+            <div class="progress-bar">
+                <div class="progress-filled"></div>
+            </div>
+            <span class="time">00:00 / 00:00</span>
+        </div>
+        <button id="previous">Previous</button>
+        <button id="pause" onclick="pause()" style="display: none;">Pause</button>
+        <button id="play" onclick="play()">Play</button>
+        <button id="next">Next</button>
+        
+    </div>
+
+    <audio class="audioplayer" ></audio>
+
+    <!-- <input type="file" class="folder-input" webkitdirectory multiple /> -->
+    
+
+    <div class="songs" id="songs">
+        <button id="file-button">Select songs</button>
+        <input type="file" class="folder-input" multiple webkitdirectory/>
+    </div>
+    
+</body>
+</html>
